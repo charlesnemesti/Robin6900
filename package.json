@@ -1,0 +1,16 @@
+{
+  "name": "robin6900",
+  "version": "1.0.0",
+  "description": "Robin6900 — fan site forked from SPX6900",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve . -p 6900",
+    "start": "npm run dev",
+    "download-assets": "powershell -ExecutionPolicy Bypass -File scripts/download-assets.ps1",
+    "localize": "powershell -ExecutionPolicy Bypass -File scripts/localize-html.ps1",
+    "theme": "powershell -ExecutionPolicy Bypass -File scripts/theme-robinhood.ps1; powershell -ExecutionPolicy Bypass -File scripts/theme-robinhood-pass2.ps1",
+    "setup": "npm run download-assets && npm run localize && npm run theme"
+  },
+  "keywords": ["robin6900", "meme", "website"],
+  "license": "UNLICENSED"
+}
