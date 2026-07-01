@@ -2,16 +2,20 @@ $root = Split-Path -Parent (Split-Path -Parent $MyInvocation.MyCommand.Path)
 $htmlPath = Join-Path $root "index.html"
 $c = [System.IO.File]::ReadAllText($htmlPath)
 
-$twitter = "https://x.com/robin6900"
-$buy = "#buy"
+$twitter = "https://x.com/Robin6900index"
+$telegram = "https://t.me/RobinAgentRH"
+$buy = "https://fun.noxa.fi/robinhood"
 
 $nav = @"
     <ul class="links" data-visibility="desktop" id="links04">
     <li class="n03">
     <a href="$twitter" target="_blank" rel="noopener noreferrer">TWITTER</a>
     </li>
+    <li class="n02">
+    <a href="$telegram" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
+    </li>
     <li class="n04">
-    <a href="$buy" id="buy-link">BUY</a>
+    <a href="$buy" id="buy-link" target="_blank" rel="noopener noreferrer">BUY</a>
     </li>
     </ul>
 "@
@@ -21,8 +25,11 @@ $footerNav = @"
     <li class="n03">
     <a href="$twitter" target="_blank" rel="noopener noreferrer">TWITTER</a>
     </li>
+    <li class="n02">
+    <a href="$telegram" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
+    </li>
     <li class="n04">
-    <a href="$buy">BUY</a>
+    <a href="$buy" target="_blank" rel="noopener noreferrer">BUY</a>
     </li>
     </ul>
 "@

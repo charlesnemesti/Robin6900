@@ -79,17 +79,7 @@ $c = $c -replace '(?s)<p id="text16">If we could harness.*?</p>', @'
 <p id="text16">If one outlaw could flip the order of finance, what could an entire forest do? Deep beneath the canopy of Robin Hood L2, a radical experiment codenamed <strong>"Project Sherwood"</strong> sought the answer. Then — the unexpected. A genesis glitch in the rollup sequencer sparked life into <strong>3333 Merry Men</strong>: on-chain guardians neither fully mortal nor fully machine, born from human hope and cryptographic anomaly. They guard the bridge. They raid bad fees. They could save us all.</p>
 '@
 
-# Tokenomics block
-$c = $c -replace '(?s)<strong>\s*Ticker: \$ROBIN<br>.*?</strong>', @'
-<strong>
-                                                            Ticker: $ROBIN<br>
-                                                            Chain: Robin Hood L2 (Ethereum Rollup)<br>
-                                                            Total supply: 6,900,000,000<br>
-                                                            Circulating supply: 6,331,951,309<br>
-                                                            Burned in the Sheriff''s fire: 568,048,691 (8.23%)<br>
-                                                            Native L2 token · Forest Bridge from Ethereum L1
-                                                        </strong>
-'@
+# Tokenomics block — updated via theme script; see index.html tokenomics-panel for live values
 
 # text48 — disclaimer (shorter themed version, keep legal structure)
 $c = $c -replace '(?s)<span class="p">Robin6900 Token is a meme token.*?</span>\s*<span class="p">\s*©', @'
