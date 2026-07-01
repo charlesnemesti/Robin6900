@@ -89,7 +89,8 @@ $c = $c -replace '(?s)<span class="p">Robin6900 Token is a meme token.*?</span>\
 '@
 
 # Headings
-$c = $c.Replace('<h2 data-visibility="desktop" id="text35">Robin6900</h2>', '<h2 data-visibility="desktop" id="text35">ROBIN6900</h2>')
+$c = $c.Replace('<h2 data-visibility="desktop" id="text35">Robin6900</h2>', '<h2 data-visibility="desktop" id="text35"><img src="/assets/brand/robin6900-title.png" alt="Robin 6900"></h2>')
+$c = $c.Replace('<h2 data-visibility="desktop" id="text35">ROBIN6900</h2>', '<h2 data-visibility="desktop" id="text35"><img src="/assets/brand/robin6900-title.png" alt="Robin 6900"></h2>')
 $c = $c.Replace('<h2 data-visibility="desktop" id="text47">Robin6900</h2>', '<h2 data-visibility="desktop" id="text47">ROBIN6900</h2>')
 
 # Fix coingecko local image

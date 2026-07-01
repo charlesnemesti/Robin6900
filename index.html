@@ -541,6 +541,48 @@
                     align-items: center;
                     justify-content: center;
                     background-color: #000000;
+                    border-color: #00D1FF;
+                    border-style: solid;
+                    border-bottom-width: 2px;
+                }
+
+                #container05 .site-header__inner {
+                    display: flex !important;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 0.75rem 1.5rem;
+                    padding: 0.6rem 2rem !important;
+                    width: 100%;
+                }
+
+                #container05 .site-header__inner > * {
+                    width: auto !important;
+                    max-width: none !important;
+                    flex: 0 0 auto;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+
+                #container05 .site-header__logo {
+                    flex-shrink: 0;
+                }
+
+                #container05 .site-header__nav {
+                    flex: 1 1 auto;
+                    display: flex;
+                    justify-content: center;
+                    min-width: 0;
+                }
+
+                #container05 .site-header__nav #links04 {
+                    justify-content: center;
+                    margin: 0;
+                    gap: 1.25rem;
+                }
+
+                #container05 .site-header__tools {
+                    flex-shrink: 0;
                 }
     
                 #container05:not(:last-child) {
@@ -2835,20 +2877,82 @@
                     width: 100%;
                 }
     
-                #container01 > .wrapper > .inner > :nth-child(1) {
-                    width: calc(25% + (var(--gutters) / 4));
-                }
-    
+                #container01 > .wrapper > .inner > :nth-child(1),
                 #container01 > .wrapper > .inner > :nth-child(2) {
-                    width: calc(25% + (var(--gutters) / 4));
+                    width: 100%;
                 }
-    
-                #container01 > .wrapper > .inner > :nth-child(3) {
-                    width: calc(25% + (var(--gutters) / 4));
+
+                #container01 .live-tv-intro {
+                    flex-basis: 100%;
+                    width: 100%;
+                    margin-bottom: 0.75rem;
+                    padding: 0 0.375rem;
                 }
-    
-                #container01 > .wrapper > .inner > :nth-child(4) {
-                    width: calc(25% + (var(--gutters) / 4));
+
+                #container01 .live-tv-intro #text24 {
+                    margin: 0 0 0.5rem;
+                }
+
+                #container01 .live-tv-intro p:not(#text24) {
+                    margin: 0;
+                    text-align: left;
+                    color: #333333;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.8em;
+                    line-height: 1.5;
+                    font-weight: 400;
+                }
+
+                #container01 .live-tv-intro strong {
+                    color: #000000;
+                }
+
+                #container01 .live-tv-videos {
+                    flex-basis: 100%;
+                    width: 100%;
+                    display: flex;
+                    gap: 1rem;
+                    align-items: stretch;
+                }
+
+                #container01 .live-tv-card {
+                    flex: 1 1 0;
+                    min-width: 0;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                #container01 .live-tv-card .video {
+                    width: 100%;
+                    margin: 0;
+                    background: #111111;
+                    border-radius: 0.35rem;
+                    overflow: hidden;
+                    line-height: 0;
+                }
+
+                #container01 .live-tv-card .video video {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                    height: auto;
+                    display: block;
+                    vertical-align: top;
+                    aspect-ratio: 16 / 9;
+                    object-fit: cover;
+                    background: #111111;
+                }
+
+                #container01 .live-tv-card .video .frame {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
+
+                #container01 .live-tv-card p {
+                    margin: 0.6rem 0 0;
+                    min-height: 2.75rem;
+                    text-align: center;
+                    font-size: 0.8em;
+                    line-height: 1.35;
                 }
     
                 #container13 {
@@ -3026,7 +3130,55 @@
                     --gutters: 0rem;
                     --padding-horizontal: 2rem;
                     --spacing: 0rem;
-                    padding: var(--padding-vertical) var(--padding-horizontal);
+                    padding: 1.5rem var(--padding-horizontal) 2rem;
+                }
+
+                #container08 .site-footer {
+                    width: 100%;
+                    max-width: 52rem;
+                    margin: 0 auto;
+                }
+
+                #container08 .site-footer__brand {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.25rem;
+                    margin-bottom: 1rem;
+                    padding: 0 0.375rem;
+                }
+
+                #container08 .site-footer__logo {
+                    width: 3.75rem;
+                    height: auto;
+                    display: block;
+                    flex-shrink: 0;
+                }
+
+                #container08 .site-footer__nav {
+                    flex: 1;
+                    min-width: 0;
+                }
+
+                #container08 .site-footer #links07 {
+                    justify-content: flex-start;
+                    margin: 0;
+                }
+
+                #container08 .site-footer #text48 {
+                    padding-left: 0.375rem;
+                    padding-right: 0.375rem;
+                }
+
+                @media (max-width: 736px) {
+                    #container08 .site-footer__brand {
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    #container08 .site-footer #links07 {
+                        justify-content: center;
+                    }
                 }
     
                 #container08 > .wrapper {
@@ -3169,19 +3321,21 @@
 
                 #text35 img, #text47 img {
                     display: block;
-                    max-width: 16rem;
-                    width: 100%;
+                    max-width: 7.5rem;
+                    width: auto;
                     height: auto;
                     margin: 0;
                 }
-    
+
                 #text35 {
                     text-align: left;
                     color: #FFFFFF;
                     font-family: 'Arial', sans-serif;
-                    font-size: 2.625em;
-                    line-height: 1.5;
+                    font-size: 0;
+                    line-height: 0;
                     font-weight: 700;
+                    margin: 0;
+                    padding: 0;
                 }
     
                 #text35 a {
@@ -5723,6 +5877,18 @@
                     border-radius: 0rem;
                     width: 100vw;
                 }
+
+                #container01 #video14 video,
+                #container01 #video15 video,
+                #container01 #video16 video,
+                #container01 #video05 video,
+                #container01 #video14 .frame,
+                #container01 #video15 .frame,
+                #container01 #video16 .frame,
+                #container01 #video05 .frame {
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
     
                 #video03:not(:first-child) {
                     margin-top: 0.625rem !important;
@@ -7877,24 +8043,23 @@
                         width: auto;
                     }
     
-                    #container01 > .wrapper > .inner > :nth-child(1) {
-                        min-height: 100% !important;
-                        width: 100% !important;
-                    }
-    
+                    #container01 > .wrapper > .inner > :nth-child(1),
                     #container01 > .wrapper > .inner > :nth-child(2) {
                         min-height: 100% !important;
                         width: 100% !important;
                     }
-    
-                    #container01 > .wrapper > .inner > :nth-child(3) {
-                        min-height: 100% !important;
+
+                    #container01 .live-tv-videos {
+                        flex-direction: column;
+                        gap: 1.25rem;
+                    }
+
+                    #container01 .live-tv-card {
                         width: 100% !important;
                     }
-    
-                    #container01 > .wrapper > .inner > :nth-child(4) {
-                        min-height: 100% !important;
-                        width: 100% !important;
+
+                    #container01 .live-tv-card p {
+                        min-height: 0;
                     }
     
                     #container13:not(:last-child) {
@@ -8107,8 +8272,26 @@
                     #text35 {
                         letter-spacing: 0rem;
                         width: 100%;
-                        font-size: 2.625em;
-                        line-height: 1.5;
+                        font-size: 0;
+                        line-height: 0;
+                    }
+
+                    #text35 img {
+                        max-width: 6rem;
+                    }
+
+                    #container05 .site-header__inner {
+                        padding: 0.5rem 1rem !important;
+                        justify-content: center;
+                    }
+
+                    #container05 .site-header__nav {
+                        flex-basis: 100%;
+                        order: 3;
+                    }
+
+                    #container05 .site-header__tools {
+                        display: none;
                     }
     
                     #text05 {
@@ -9596,7 +9779,11 @@
                     }
     
                     #text35 {
-                        font-size: 2em;
+                        font-size: 0;
+                    }
+
+                    #text35 img {
+                        max-width: 5.5rem;
                     }
     
                     #text05 {
@@ -9935,39 +10122,24 @@
     </div>
     <div class="container columns full screen" id="container05">
     <div class="wrapper">
-    <div class="inner">
-    <div>
-    <h2 data-visibility="desktop" id="text35">ROBIN6900</h2>
-    
+    <div class="inner site-header__inner">
+    <div class="site-header__logo">
+    <h2 data-visibility="desktop" id="text35"><img src="/assets/brand/robin6900-title.png" alt="Robin 6900"></h2>
     </div>
-    <div>
-    </div>
-    <div>
-    <hr id="divider09">
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="container columns full screen" id="container02">
-    <div class="wrapper">
-    <div class="inner">
-    <div>
+    <nav class="site-header__nav">
         <ul class="links" data-visibility="desktop" id="links04">
     <li class="n03">
     <a href="https://x.com/Robin6900index" target="_blank" rel="noopener noreferrer">TWITTER</a>
     </li>
     <li class="n02">
-    <a href="https://t.me/RobinAgentRH" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
+    <a href="https://t.me/Robin6900RH" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
     </li>
     <li class="n04">
     <a href="https://fun.noxa.fi/robinhood" id="buy-link" target="_blank" rel="noopener noreferrer">BUY</a>
     </li>
     </ul>
-    
-    <hr data-visibility="mobile" id="divider23">
-    </div>
-    <div></div>
-    <div>
+    </nav>
+    <div class="site-header__tools">
     <div id="embed06">
     <div id="google_translate_element"></div>
     </div>
@@ -10365,54 +10537,38 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     <div class="container columns" id="container01">
     <div class="wrapper">
     <div class="inner">
-    <div>
-    <p id="text24">
+    <div class="live-tv-intro">
+        <p id="text24">
     <span style="color: #FF3838">• LIVE TV</span>
                                                 Robin Hood Originals
                                             </p>
+        <p>These are the mythical videos from the <strong>SPX6900</strong> token — the legend that inspired <strong>ROBIN6900</strong> as the Robin Hood L2 runner. Same energy, new forest.</p>
+    </div>
+    <div class="live-tv-videos">
+    <div class="live-tv-card">
     <div class="video" id="video14">
-    <video controls="" playsinline="" poster="/assets/spx_uwu_ai/assets/videos/video14.mp4.jpg" preload="auto" src="/assets/spx_uwu_ai/assets/videos/video14.mp4" webkit-playsinline=""></video>
+    <video controls="" playsinline="" preload="metadata" src="/assets/spx_uwu_ai/assets/videos/video14.mp4" webkit-playsinline=""></video>
     </div>
     <p id="text21">Stop paying the Sheriff. Start believing in the Hood.</p>
     </div>
-    <div>
-    <hr id="divider16">
+    <div class="live-tv-card">
     <div class="video" id="video15">
-    <video controls="" playsinline="" poster="/assets/spx_uwu_ai/assets/videos/video15.mp4.jpg" preload="auto" src="/assets/spx_uwu_ai/assets/videos/video15.mp4" webkit-playsinline=""></video>
+    <video controls="" playsinline="" preload="metadata" src="/assets/spx_uwu_ai/assets/videos/video15.mp4" webkit-playsinline=""></video>
     </div>
     <p id="text32">You'll never see him miss a shot in his final form.</p>
     </div>
-    <div>
-    <hr id="divider03">
+    <div class="live-tv-card">
     <div class="video" id="video16">
-    <video controls="" playsinline="" poster="/assets/spx_uwu_ai/assets/videos/video16.mp4.jpg" preload="auto" src="/assets/spx_uwu_ai/assets/videos/video16.mp4" webkit-playsinline=""></video>
+    <video controls="" playsinline="" preload="metadata" src="/assets/spx_uwu_ai/assets/videos/video16.mp4" webkit-playsinline=""></video>
     </div>
     <p id="text38">ROBIN RETURNS!? THE HOOD'S NOT DONE!?</p>
-    <hr id="divider18">
     </div>
-    <div>
-    <hr id="divider22">
+    <div class="live-tv-card">
     <div class="video" id="video05">
-    <video controls="" playsinline="" poster="/assets/spx_uwu_ai/assets/videos/video05.mp4.jpg" preload="auto" src="/assets/spx_uwu_ai/assets/videos/video05.mp4" webkit-playsinline=""></video>
+    <video controls="" playsinline="" preload="metadata" src="/assets/spx_uwu_ai/assets/videos/video05.mp4" webkit-playsinline=""></video>
     </div>
     <p id="text29">Little John Based!</p>
-    <hr id="divider17">
     </div>
-    </div>
-    </div>
-    </div>
-    <div class="container columns full screen" id="container13">
-    <div class="wrapper">
-    <div class="inner">
-    <div>
-    <h2 data-visibility="desktop" id="text47"><img src="/assets/brand/robin6900-logo.png" alt="ROBIN6900"></h2>
-    
-    </div>
-    <div>
-    <hr data-visibility="desktop" id="divider05">
-    </div>
-    <div>
-    <hr id="divider06">
     </div>
     </div>
     </div>
@@ -10420,18 +10576,23 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     <div class="container default full screen" id="container08">
     <div class="wrapper">
     <div class="inner">
-    
+    <div class="site-footer">
+    <div class="site-footer__brand">
+    <img src="/assets/brand/robin6900-logo.png" alt="ROBIN6900" class="site-footer__logo">
+    <div class="site-footer__nav">
         <ul class="links" data-visibility="mobile" id="links07">
     <li class="n03">
     <a href="https://x.com/Robin6900index" target="_blank" rel="noopener noreferrer">TWITTER</a>
     </li>
     <li class="n02">
-    <a href="https://t.me/RobinAgentRH" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
+    <a href="https://t.me/Robin6900RH" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
     </li>
     <li class="n04">
     <a href="https://fun.noxa.fi/robinhood" target="_blank" rel="noopener noreferrer">BUY</a>
     </li>
     </ul>
+    </div>
+    </div>
     <hr data-visibility="mobile" id="divider10">
     <p data-visibility="desktop" id="text48">
 <span class="p">ROBIN6900 ($ROBIN) is a community meme token on Robin Hood L2, created for entertainment and cultural expression only. It has no association with any stocks, equities, securities, indices, companies, Robinhood Markets Inc., or other financial entities. Any resemblance to legends, markets, or individuals is parody and satire. This site is an unofficial fan portal for the ROBIN6900 community with no affiliation to any official organization. Links are provided for convenience and do not imply endorsement. $ROBIN has no intrinsic value and no expectation of financial return. Use at your own risk. This is not financial, legal, or investment advice. All content is provided as-is without warranties. By using this site you accept full responsibility for your actions and agree to indemnify the host against claims arising from your use.</span>
@@ -10441,6 +10602,7 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     </p>
     
     <hr id="divider04">
+    </div>
     </div>
     </div>
     </div>

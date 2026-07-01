@@ -3,7 +3,7 @@ $htmlPath = Join-Path $root "index.html"
 $c = [System.IO.File]::ReadAllText($htmlPath)
 
 $twitter = "https://x.com/Robin6900index"
-$telegram = "https://t.me/RobinAgentRH"
+$telegram = "https://t.me/Robin6900RH"
 $buy = "https://fun.noxa.fi/robinhood"
 
 $nav = @"
