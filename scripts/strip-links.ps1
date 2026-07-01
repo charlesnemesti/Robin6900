@@ -47,7 +47,7 @@ $c = [regex]::Replace($c, '(?s)<p id="text51">.*?</p>', '')
 $c = [regex]::Replace($c, '(?s)<div class="gallery full" id="gallery01">.*?</div>\s*</div>', '')
 
 # Remove coingecko/cmc linked block
-$c = [regex]::Replace($c, '(?s)<strong>Track \$ROBIN Across the Realm.*?</a>\s*', '')
+$c = [regex]::Replace($c, '(?s)<strong>Track \$ROBIN6900 Across the Realm.*?</a>\s*', '')
 
 # Unwrap any remaining external links but keep inner content
 $c = [regex]::Replace($c, '<a[^>]*href="https?://[^"]*"[^>]*>', '')

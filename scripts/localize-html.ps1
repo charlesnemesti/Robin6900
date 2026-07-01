@@ -41,12 +41,12 @@ $content = $content -replace 'href="https://spx6900\.com/"', 'href="https://robi
 $content = $content -replace '>SPX6900<', '>Robin6900<'
 $content = $content -replace 'SPX6900 ', 'Robin6900 '
 $content = $content -replace ' SPX6900', ' Robin6900'
-$content = $content -replace '\$SPX', '$ROBIN'
+$content = $content -replace '\$SPX', '$ROBIN6900'
 $content = $content -replace 'SPX Originals', 'Robin Originals'
 $content = $content -replace 'SPX6900 Labs', 'Robin6900 Labs'
 $content = $content -replace 'SPX500', 'Robin500'
-$content = $content -replace '© 2023 by \$SPX', '© 2026 by $ROBIN'
-$content = $content -replace '© 2023 by \$ROBIN', '© 2026 by $ROBIN'
+$content = $content -replace '© 2023 by \$SPX', '© 2026 by $ROBIN6900'
+$content = $content -replace '© 2023 by \$ROBIN6900', '© 2026 by $ROBIN6900'
 $content = $content -replace '<title>Robin6900 Website</title>', '<title>Robin6900 Website</title>'
 
 Set-Content $htmlPath $content -Encoding UTF8 -NoNewline

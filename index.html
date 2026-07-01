@@ -5,7 +5,7 @@
     <meta content="light only" name="color-scheme">
     <meta content="ROBIN6900" property="og:site_name">
     <meta content="ROBIN6900 | The Outlaw Token on Robin Hood L2" property="og:title">
-    <meta content="6900 outlaws are stronger than 500 knights of old finance. $ROBIN lives on Robin Hood L2 - Ethereum's layer where fees get robbed from the rich and returned to the people." property="og:description">
+    <meta content="6900 outlaws are stronger than 500 knights of old finance. $ROBIN6900 lives on Robin Hood L2 - Ethereum's layer where fees get robbed from the rich and returned to the people." property="og:description">
     <meta content="website" property="og:type">
     <meta content="/assets/brand/robin6900-logo.png" property="og:image">
     <meta content="image/png" property="og:image:type">
@@ -1196,6 +1196,112 @@
     
                 #container07 > .wrapper > .inner > :nth-child(3) {
                     width: calc(25% + (var(--gutters) / 3));
+                }
+
+                #container07 #video01 video,
+                #container07 #video01 .frame {
+                    width: 100% !important;
+                    max-width: 100%;
+                }
+
+                #container07 .sherwood-widget {
+                    margin-top: 0.75rem;
+                    padding: 0.85rem 1rem;
+                    border: 2px solid #000000;
+                    background: linear-gradient(135deg, #f4fff0 0%, #e8ffe0 100%);
+                    box-shadow: 4px 4px 0 #000000;
+                }
+
+                #container07 .sherwood-widget__tag {
+                    margin: 0 0 0.35rem;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.6em;
+                    font-weight: 700;
+                    letter-spacing: 0.12em;
+                    color: #FF3838;
+                }
+
+                #container07 .sherwood-widget__title {
+                    margin: 0 0 0.5rem;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.95em;
+                    font-weight: 700;
+                    color: #000000;
+                }
+
+                #container07 .sherwood-widget__meter {
+                    height: 0.65rem;
+                    background: #dddddd;
+                    border: 1px solid #000000;
+                    overflow: hidden;
+                }
+
+                #container07 .sherwood-widget__meter-fill {
+                    height: 100%;
+                    width: 42%;
+                    background: linear-gradient(90deg, #14FF00, #FFE500, #FF3838);
+                    transition: width 0.45s ease;
+                }
+
+                #container07 .sherwood-widget__meter-label {
+                    margin: 0.35rem 0 0.65rem;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.7em;
+                    color: #333333;
+                }
+
+                #container07 .sherwood-widget__btn {
+                    display: block;
+                    width: 100%;
+                    padding: 0.55rem 0.75rem;
+                    border: 2px solid #000000;
+                    background: #FFE500;
+                    color: #000000;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.8em;
+                    font-weight: 700;
+                    cursor: pointer;
+                    transition: transform 0.1s ease, box-shadow 0.1s ease;
+                }
+
+                #container07 .sherwood-widget__btn:hover {
+                    transform: translate(-1px, -1px);
+                    box-shadow: 3px 3px 0 #000000;
+                }
+
+                #container07 .sherwood-widget__btn:active {
+                    transform: translate(2px, 2px);
+                    box-shadow: none;
+                }
+
+                #container07 .sherwood-widget__result {
+                    margin: 0.65rem 0 0.4rem;
+                    min-height: 2.5rem;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.72em;
+                    line-height: 1.4;
+                    color: #111111;
+                }
+
+                #container07 .sherwood-widget__stat {
+                    margin: 0;
+                    font-family: 'Arial', sans-serif;
+                    font-size: 0.65em;
+                    color: #555555;
+                }
+
+                #container07 .sherwood-widget__stat strong {
+                    color: #14FF00;
+                }
+
+                #container07 .sherwood-widget--shake {
+                    animation: sherwood-shake 0.35s ease;
+                }
+
+                @keyframes sherwood-shake {
+                    0%, 100% { transform: translateX(0); }
+                    25% { transform: translateX(-4px); }
+                    75% { transform: translateX(4px); }
                 }
     
                 #container17 {
@@ -10190,9 +10296,20 @@
     <video autoplay="" controls="" loop="" muted="" playsinline="" preload="auto" src="/assets/videos/hero.mp4" webkit-playsinline=""></video>
     </div>
     <p id="text49">
-    <em>($ROBIN EXPLAINER FOR THE PEASANT CLASS)</em>
+    <em>($ROBIN6900 EXPLAINER FOR THE PEASANT CLASS)</em>
     </p>
     <hr id="divider01">
+    <div class="sherwood-widget" id="sherwood-widget">
+        <p class="sherwood-widget__tag">LIVE FROM SHERWOOD</p>
+        <p class="sherwood-widget__title">Sheriff Saltiness Meter</p>
+        <div class="sherwood-widget__meter" aria-hidden="true">
+            <div class="sherwood-widget__meter-fill" id="sheriff-meter"></div>
+        </div>
+        <p class="sherwood-widget__meter-label" id="sheriff-meter-label">Measuring Nottingham cope levels…</p>
+        <button type="button" class="sherwood-widget__btn" id="rob-sheriff-btn">ROB THE SHERIFF</button>
+        <p class="sherwood-widget__result" id="rob-result" aria-live="polite">Press the button. Steal something symbolic.</p>
+        <p class="sherwood-widget__stat">Arrows fired today: <strong id="arrow-count">6900</strong></p>
+    </div>
     </div>
     <div>
     <p id="text25">The Sheriff's Nightmare</p>
@@ -10200,7 +10317,7 @@
     <p id="text18">
     <span class="p">In a moment of awakening that could redefine how we perceive on-chain finance, thousands are coming to grips with a revolutionary truth: <strong>6900 outlaws are more than 500 knights</strong> of the old financial order. This is not just arithmetic - it is a paradigm shift. ROBIN6900 rises as the banner of Robin Hood L2, Ethereum's layer where the Sheriff's tolls get ambushed and returned to the people.
 
-$ROBIN is not another index pretending to represent "the market." It is the arrow fired from Sherwood into the heart of extractive finance - low fees, fast finality, and a community that takes from bloated middlemen and gives back to the hood.
+$ROBIN6900 is not another index pretending to represent "the market." It is the arrow fired from Sherwood into the heart of extractive finance - low fees, fast finality, and a community that takes from bloated middlemen and gives back to the hood.
 
 This movement is more than a ticker. It is a redefinition of who DeFi serves. As the forest grows louder, one message echoes through every block: <strong>the age of the Sheriff is over. The Hood has arrived.</strong></span>
     </p>
@@ -10218,10 +10335,10 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
 <p id="text19" style="text-align: center; line-height: 1.6;">
   Go search "ROBIN6900" on Google.<br>
   Go ask the oracle of Sherwood about Robin Hood L2.<br>
-  Go search $ROBIN on X - the arrows are flying.<br>
+  Go search $ROBIN6900 on X - the arrows are flying.<br>
   Go find the Merry Men on Reddit.<br>
   Go check behind your wallet - Robin was already there.<br>
-  Go look for $ROBIN in your heart.<br>
+  Go look for $ROBIN6900 in your heart.<br>
 <strong>We rob from the fees. We give to the people.</strong>
 </p>
     <hr id="divider19">
@@ -10260,7 +10377,7 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     </div>
     <div>
     <hr data-visibility="mobile" id="divider27">
-    <p id="text60">Sherwood whale songs decoded - and they're chanting $ROBIN?</p>
+    <p id="text60">Sherwood whale songs decoded - and they're chanting $ROBIN6900?</p>
     <hr data-visibility="mobile" id="divider28">
     </div>
     </div>
@@ -10271,13 +10388,13 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     <div class="inner">
     <div>
     <p id="text27">The Sherwood Manifesto</p>
-    <p id="text28">You were born into a world where the Sheriff taxes every transaction, where gas fees eat your lunch before you reach the market, and where the "knights" of Wall Street feast in castles built from your yield. You entered a landscape where the old benchmarks already celebrated their greatest spoils - leaving you to wonder what's left for the rest of us. You're navigating a reality shaped by bailouts for the rich, rugs for the retail, and a financial system that treats the common holder like a peasant in Nottingham. You were born into a different era. One forever altered by forces beyond your control. A new world demands new outlaws. <strong>ROBIN6900 is the reset.</strong> Robin Hood L2 is the forest where your trades move at the speed of an arrow. $ROBIN is the token that says: the treasury belongs to the people. ROBIN6900 sows the seeds of a fairer chain. ROBIN6900 nourishes the Merry Men and every wallet that refuses to kneel. ROBIN6900 is for you, your band, and every generation that chooses the Hood over the Sheriff.</p>
+    <p id="text28">You were born into a world where the Sheriff taxes every transaction, where gas fees eat your lunch before you reach the market, and where the "knights" of Wall Street feast in castles built from your yield. You entered a landscape where the old benchmarks already celebrated their greatest spoils - leaving you to wonder what's left for the rest of us. You're navigating a reality shaped by bailouts for the rich, rugs for the retail, and a financial system that treats the common holder like a peasant in Nottingham. You were born into a different era. One forever altered by forces beyond your control. A new world demands new outlaws. <strong>ROBIN6900 is the reset.</strong> Robin Hood L2 is the forest where your trades move at the speed of an arrow. $ROBIN6900 is the token that says: the treasury belongs to the people. ROBIN6900 sows the seeds of a fairer chain. ROBIN6900 nourishes the Merry Men and every wallet that refuses to kneel. ROBIN6900 is for you, your band, and every generation that chooses the Hood over the Sheriff.</p>
     </div>
     <div>
     <p id="text15">Sheriff Greedfoot of Wall Street Cannot Stop Printing Gold Certificates</p>
     <p id="text17">
     <span class="p">For decades, the Sheriffs of centralized finance have run an extraction machine disguised as progress. Quantitative easing. Hidden spreads. MEV bots dressed as market makers. Every cycle, billions flow uphill - from the peasants to the castle.</span>
-    <span class="p">Robin Hood L2 was forged as the antidote. An Ethereum rollup where settlement is fast, fees are stolen back from the oligarchy of L1 congestion, and $ROBIN holders govern the forest like true Merry Men. No infinite money printer. No permission from Nottingham. Just open code, shared upside, and a protagonist who never misses: <strong>Robin Hood</strong> - taking from bloated infrastructure, giving to the chain of the people. The Sheriff can print gold certificates. We print blocks of freedom.</span>
+    <span class="p">Robin Hood L2 was forged as the antidote. An Ethereum rollup where settlement is fast, fees are stolen back from the oligarchy of L1 congestion, and $ROBIN6900 holders govern the forest like true Merry Men. No infinite money printer. No permission from Nottingham. Just open code, shared upside, and a protagonist who never misses: <strong>Robin Hood</strong> - taking from bloated infrastructure, giving to the chain of the people. The Sheriff can print gold certificates. We print blocks of freedom.</span>
 </p>
     </div>
     <div>
@@ -10305,7 +10422,7 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     <em>
     <strong>The Sheriff says you need $1.5 million to retire.</strong>
     </em>
-    A whale just bridged 6900 ETH to Robin Hood L2 in one tx. And a degen who aped $ROBIN at block zero still tells the tale in Sherwood Tavern.</p>
+    A whale just bridged 6900 ETH to Robin Hood L2 in one tx. And a degen who aped $ROBIN6900 at block zero still tells the tale in Sherwood Tavern.</p>
     </div>
     </div>
     </div>
@@ -10487,7 +10604,7 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
         <div class="tokenomics-grid">
             <div class="tokenomics-stat">
                 <span class="tokenomics-stat__label">Ticker</span>
-                <span class="tokenomics-stat__value tokenomics-stat__value--pending">Waiting for launch</span>
+                <span class="tokenomics-stat__value">$ROBIN6900</span>
             </div>
             <div class="tokenomics-stat">
                 <span class="tokenomics-stat__label">Total Supply</span>
@@ -10595,9 +10712,9 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     </div>
     <hr data-visibility="mobile" id="divider10">
     <p data-visibility="desktop" id="text48">
-<span class="p">ROBIN6900 ($ROBIN) is a community meme token on Robin Hood L2, created for entertainment and cultural expression only. It has no association with any stocks, equities, securities, indices, companies, Robinhood Markets Inc., or other financial entities. Any resemblance to legends, markets, or individuals is parody and satire. This site is an unofficial fan portal for the ROBIN6900 community with no affiliation to any official organization. Links are provided for convenience and do not imply endorsement. $ROBIN has no intrinsic value and no expectation of financial return. Use at your own risk. This is not financial, legal, or investment advice. All content is provided as-is without warranties. By using this site you accept full responsibility for your actions and agree to indemnify the host against claims arising from your use.</span>
+<span class="p">ROBIN6900 ($ROBIN6900) is a community meme token on Robin Hood L2, created for entertainment and cultural expression only. It has no association with any stocks, equities, securities, indices, companies, Robinhood Markets Inc., or other financial entities. Any resemblance to legends, markets, or individuals is parody and satire. This site is an unofficial fan portal for the ROBIN6900 community with no affiliation to any official organization. Links are provided for convenience and do not imply endorsement. $ROBIN6900 has no intrinsic value and no expectation of financial return. Use at your own risk. This is not financial, legal, or investment advice. All content is provided as-is without warranties. By using this site you accept full responsibility for your actions and agree to indemnify the host against claims arising from your use.</span>
     <span class="p">
-                                                © 2026 by $ROBIN &amp; the Merry Men. All rights reserved!<br>
+                                                © 2026 by $ROBIN6900 &amp; the Merry Men. All rights reserved!<br>
                                                 Contact: hello@robin6900.com</span>
     </p>
     
@@ -10683,6 +10800,56 @@ This movement is more than a ticker. It is a redefinition of who DeFi serves. As
     </div>
     </div>
     
+    <script>
+    (function () {
+        var btn = document.getElementById('rob-sheriff-btn');
+        var widget = document.getElementById('sherwood-widget');
+        var meter = document.getElementById('sheriff-meter');
+        var meterLabel = document.getElementById('sheriff-meter-label');
+        var result = document.getElementById('rob-result');
+        var arrowCount = document.getElementById('arrow-count');
+        if (!btn || !widget || !meter || !meterLabel || !result || !arrowCount) return;
+
+        var loot = 0;
+        var clicks = 0;
+        var lines = [
+            'You stole 6,900 imaginary gold coins. The Sheriff is typing…',
+            'Merry Man deployed. Gas fee: paid by Nottingham.',
+            'Sheriff portfolio: -99%. Your bags: spiritually green.',
+            'Arrow hit a MEV bot. Robin keeps the tip.',
+            'Nottingham bridge collapsed from pure salt.',
+            'You found $ROBIN6900 behind your wallet. Classic.',
+            '6900 outlaws just liked this ambush.',
+            'Sheriff tried to liquidate Sherwood. Reverted.',
+            'A whale bridged cope straight into Robin Hood L2.',
+            'Little John called. He said: based.'
+        ];
+        var labels = [
+            'Cope levels: critically high',
+            'Salt detected in Nottingham treasury',
+            'Sheriff malding at block speed',
+            'Maximum Nottingham seethe achieved',
+            'Forest morale: illegally bullish'
+        ];
+
+        btn.addEventListener('click', function () {
+            clicks += 1;
+            loot += Math.floor(Math.random() * 690) + 69;
+            arrowCount.textContent = (6900 + clicks * 7).toLocaleString();
+            meter.style.width = Math.min(99, 20 + clicks * 11 + Math.random() * 15) + '%';
+            meterLabel.textContent = labels[Math.floor(Math.random() * labels.length)];
+            result.textContent = lines[Math.floor(Math.random() * lines.length)] + ' Loot secured: ' + loot.toLocaleString() + ' fake gold.';
+
+            widget.classList.remove('sherwood-widget--shake');
+            void widget.offsetWidth;
+            widget.classList.add('sherwood-widget--shake');
+
+            if (clicks === 5) {
+                result.textContent = 'ACHIEVEMENT UNLOCKED: Honorary Merry Man. The forest salutes you.';
+            }
+        });
+    })();
+    </script>
     
     </body></html>
     
